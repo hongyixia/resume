@@ -10,7 +10,7 @@
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{red}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -22,7 +22,10 @@
 \usepackage[scale=0.75]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% \lhead{Hongyi Xia\\Stanford University - Department of Aeronautics and Astronautics}
+% \lhead{Curriculum Vitae\\Department of Aerospace Engineering\\U-M ID: 29804372}
 % personal data
 \name{Hongyi}{Xia}
 %\title{Resumé title}                               % optional, remove / comment the line if not wanted
@@ -42,6 +45,10 @@
 
 % bibliography with mutiple entries
 \usepackage{multibib}
+\usepackage{textgreek}
+\usepackage[T1]{fontenc}
+\usepackage{tgpagella}
+\usepackage{dtklogos}
 %\newcites{book,misc}{{Books},{Others}}
 %----------------------------------------------------------------------------------
 %            content
@@ -62,11 +69,12 @@
 
 \section{Experience}
 \subsection{Industry}
-\cventry{September 2013--September 2014}{Propulsion Intern}{Space Exploration Technologies}{Hawthorne, CA}{}{
+\cventry{September 2013--August 2014}{Propulsion Intern}{Space Exploration Technologies}{Hawthorne, CA}{}{
 \begin{itemize}
 \item Developed software to visualize 3D combustion simulations of the Raptor rocket engine in C++ and OpenGL. Integrated with Leap Motion sensor for interaction via hand gestures.
-\item CFD and thermal analysis of the Merlin 1D rocket engine, Crew Dragon vehicle, Falcon 9 v1.1 vehicle, and Falcon v1.1 developmental vehicle in ANSYS CFX, Star-CCM+, and Thermal Desktop to aid design, ensure correct operation of various components, and to keep on schedule for flight vehicle development and production.
-\item Created algorithms to automate data review of the Merlin 1D and Merlin Vacuum engine acceptance testing. Optimized and updated engine performance codes for efficiency and speed. Supported data aquisition for launch operations.
+\item CFD and thermal analysis of the Merlin 1D rocket engine, Crew Dragon vehicle, Falcon 9 v1.1 vehicle, and Falcon 9 v1.1 developmental vehicle in ANSYS CFX, Star-CCM+, and Thermal Desktop to aid design, ensure correct operation of various components, and to keep on schedule for flight vehicle development and production.
+\item Created algorithms to automate data review of the Merlin 1D and Merlin Vacuum engine. Complete rewrite of current engine performance code to calculate engine parameters of single engine acceptance test data and stage test data for improved readability, accuracy, and consistency. Built an understanding of the engine fluid system, core rocket equations, pump maps, stage calculations etc.
+\item Supported daily operations of the Liquid Engine Development team in data review and flight data acquisition during launch operations. Developed application to support flight data acquisition.
 \end{itemize}}
 \cventry{September--December 2012}{Entrepreneurial Consultant}{Science Applications International Corporation}{College Park, MD}{}{Researched and wrote recommendation report on waste heat recovery systems for military engines as part of an entrepreneurial consulting engagement partnered through Hinman CEOs.}
 \subsection{Research}
@@ -79,7 +87,7 @@
 \end{itemize}}
 
 \cventry{June--August 2012}{Research Intern}{Miniature Robotics REU Program, University of Maryland}{College Park, MD}{}{Developed a method to visualize 3D flows using Microsoft Kinect as a sensor. Calibrated and programmed Microsoft Kinect cameras in OpenCV and python to collect depth video data. Wrote Matlab scripts to image process depth video data of smoke rings and calculate their flow properties.}
-\cventry{June--August 2009}{Research Intern}{National Institutes of Health}{Bethesda, MD}{}{Research culminated in paper titled ``Determination of the Effect of Modifying Gb5 Expression Levels on Drosophila Oxidative Stress Resistance.'' Placed semi-finals in Siemens Competition in Math, Science, and Technology.}
+\cventry{June--August 2009}{Research Intern}{National Institutes of Health}{Bethesda, MD}{}{Research culminated in paper titled ``Determination of the Effect of Modifying G\textbeta5 Expression Levels on Drosophila Oxidative Stress Resistance.'' Placed semi-finals in Siemens Competition in Math, Science, and Technology.}
 
 
 \section{Teaching and Mentoring}
@@ -93,7 +101,7 @@
 \cvitemwithcomment{English}{Fluent}{Lived in the United States since age 6}
 
 \section{Computer skills}
-\cvitem{Languages}{Matlab, Java, Python, C++, OpenGL}
+\cvitem{Languages}{Matlab, Java, Python, C++, OpenGL, git, \LaTeX}
 \cvitem{Applications}{ANSYS, Star-CCM+, Thermal Desktop, Autodesk Inventor, Siemens NX, VIsual Studio}
 \cvitem{Operating Systems}{Linux, Macintosh, Windows}
 
@@ -127,22 +135,23 @@
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-%\nocite{*}
-\section{Publications}
-%\bibliographystyle{plain}
-%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+%  to redefine the heading string ("Publications"):
+\renewcommand{\refname}{Presentations}
+% \nocite{*}
+\section{Publications and Presentations}
+% \bibliographystyle{plain}
+% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
 \begin{thebibliography}{1}
 \bibitem{aiaa} Hongyi Xia. {\em Experimental Flow Visualization of Karman Vortex Flow past a Fish-inspired Robot.}  2013: AIAA Region I-MA Student Conference.
 \bibitem{minirobot}  Hongyi Xia. {\em 3D Flow Visualization using Microsoft Kinect} 2012:
 Miniature Robotics REU Program Final Presentation University of Maryland College Park.
-\bibitem{siemens} Hongyi Xia. {\em Determination of the Effect of Modifying Gb5 Expression Levels on Drosophila Oxidative Stress Resistance} 2009: Placed as semifinalist in the Siemens Competition in Math, Science, and Technology.
+\bibitem{siemens} Hongyi Xia. {\em Determination of the Effect of Modifying G$\beta$5 Expression Levels on Drosophila Oxidative Stress Resistance} 2009: Placed as semifinalist in the Siemens Competition in Math, Science, and Technology.
 \end{thebibliography}
 % Publications from a BibTeX file using the multibib package
-%\section{Publications}
+% \section{Publications}
 %\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+% \bibliographystylebook{plain}
+% \bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
 %\nocitemisc{misc1,misc2,misc3}
 %\bibliographystylemisc{plain}
 %\bibliography{publications}                   % 'publications' is the name of a BibTeX file
