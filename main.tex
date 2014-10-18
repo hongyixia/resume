@@ -6,26 +6,26 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.82]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-% \lhead{Hongyi Xia\\Stanford University - Department of Aeronautics and Astronautics}
-% \lhead{Curriculum Vitae\\Department of Aerospace Engineering\\U-M ID: 29804372}
+% \lhead{Curriculum Vitae\\Stanford University - Department of Aeronautics and Astronautics}
+\lhead{Curriculum Vitae\\Department of Aerospace Engineering\\U-M ID: 29804372}
 % personal data
 \name{Hongyi}{Xia}
 %\title{Resumé title}                               % optional, remove / comment the line if not wanted
@@ -59,8 +59,8 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2010--2015 Expected}{B.S. Aerospace Engineering}{University of Maryland College Park}{College Park, MD}{\textit{3.75}}{Aerospace Engineering Honors Program}  % arguments 3 to 6 can be left empty
-\cventry{2006--2010}{High School}{Montgomery Blair High School}{Silver Spring, MD}{\textit{}}{Science, Mathematics, and Computer Science Magnet Program}
+\cventry{2010--2015 Expected}{B.S. Aerospace Engineering}{University of Maryland College Park}{College Park}{MD}{Aerospace Engineering Honors Program}  % arguments 3 to 6 can be left empty
+\cventry{2006--2010}{High School}{Montgomery Blair High School}{Silver Spring}{MD}{Science, Mathematics, and Computer Science Magnet Program}
 
 %\section{Master thesis}
 %\cvitem{title}{\emph{Title}}
@@ -86,7 +86,7 @@
 \item Developed a motion coordination algorithm for Lego NXT that enables two robotic tanks to balance on a seesaw. (2010)
 \end{itemize}}
 
-\cventry{June--August 2012}{Research Intern}{Miniature Robotics REU Program, University of Maryland}{College Park, MD}{}{Developed a method to visualize 3D flows using Microsoft Kinect as a sensor. Calibrated and programmed Microsoft Kinect cameras in OpenCV and python to collect depth video data. Wrote Matlab scripts to image process depth video data of smoke rings and calculate their flow properties.}
+\cventry{June--August 2012}{Research Intern}{Miniature Robotics REU Program, University of Maryland}{College Park, MD}{}{Developed a method to visualize 3D flows using Microsoft Kinect as a sensor. Calibrated and programmed Microsoft Kinect cameras in OpenCV and Python to collect depth video data. Wrote Matlab scripts to image process depth video data of smoke rings and calculate their flow properties.}
 \cventry{June--August 2009}{Research Intern}{National Institutes of Health}{Bethesda, MD}{}{Research culminated in paper titled ``Determination of the Effect of Modifying G\textbeta5 Expression Levels on Drosophila Oxidative Stress Resistance.'' Placed semi-finals in Siemens Competition in Math, Science, and Technology.}
 
 
@@ -97,26 +97,27 @@
 
 
 \section{Languages}
-\cvitemwithcomment{Mandarin Chinese}{Fluent}{Native Speaker}
+\cvitemwithcomment{Mandarin}{Fluent}{Native Speaker}
 \cvitemwithcomment{English}{Fluent}{Lived in the United States since age 6}
 
 \section{Computer skills}
 \cvitem{Languages}{Matlab, Java, Python, C++, OpenGL, git, \LaTeX}
-\cvitem{Applications}{ANSYS, Star-CCM+, Thermal Desktop, Autodesk Inventor, Siemens NX, VIsual Studio}
-\cvitem{Operating Systems}{Linux, Macintosh, Windows}
+\cvitem{Applications}{ANSYS, Star-CCM+, Thermal Desktop, Autodesk Inventor, Siemens NX, Visual Studio}
+\cvitem{Operating Systems}{Linux, Mac OS X, Windows}
 
 \section{Academic Honors}
+\cvlistitem{1st Place, JP Morgan Code for Good Challenge - Delaware 2014}
 \cvlistitem{Banneker Key Scholar - Full, four year scholarship to the University of Maryland (2010-2014)}
 \cvlistitem{Siemens Competition in Math, Science, and Technology Semifinalist 2009}
 \cvlistitem{Maryland Distinguished Scholar Finalist (Academic Achievement) 2009}
 \cvlistitem{National AP Scholar 2009}
 
 \section{Affiliations}
-\cvitem{Hinman CEOs}{A living and learning entrepreneurship program at the University of Maryland}
-\cvitem{AIAA}{American Institute of Aeronautics and Astronautics}
-\cvitem{Tau Beta Pi}{National Engineering Honor Society}
-\cvitem{Sigma Gamma Tau}{National Aerospace Engineering Honor Society}
-\cvitem{Alpha Omega Epsilon}{Professional Engineering Sorority}
+\cvlistitem{Hinman CEOs - A living and learning entrepreneurship program at the University of Maryland}
+\cvlistitem{AIAA - American Institute of Aeronautics and Astronautics}
+\cvlistitem{Tau Beta Pi - National Engineering Honor Society, inducted December 2011.}
+\cvlistitem{Sigma Gamma Tau - National Aerospace Engineering Honor Society, inducted December 2011.}
+\cvlistitem{Alpha Omega Epsilon - Professional Engineering Sorority}
 
 
 
@@ -143,8 +144,9 @@
 % \bibliography{publications}                        % 'publications' is the name of a BibTeX file
 \begin{thebibliography}{1}
 \bibitem{aiaa} Hongyi Xia. {\em Experimental Flow Visualization of Karman Vortex Flow past a Fish-inspired Robot.}  2013: AIAA Region I-MA Student Conference.
+\bibitem{nao} Hongyi Xia. {\em Designing Exercises for the NAO as an Exercise Buddy in an Obesity Intervention Study.} 2013: University of Southern California Viterbi School of Engineering Summer Undergraduate Research Experience Final Presentation.
 \bibitem{minirobot}  Hongyi Xia. {\em 3D Flow Visualization using Microsoft Kinect} 2012:
-Miniature Robotics REU Program Final Presentation University of Maryland College Park.
+Miniature Robotics Research Experiences for Undergraduates Program Final Presentation University of Maryland College Park.
 \bibitem{siemens} Hongyi Xia. {\em Determination of the Effect of Modifying G$\beta$5 Expression Levels on Drosophila Oxidative Stress Resistance} 2009: Placed as semifinalist in the Siemens Competition in Math, Science, and Technology.
 \end{thebibliography}
 % Publications from a BibTeX file using the multibib package
