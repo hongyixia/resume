@@ -24,3 +24,6 @@
 *.out
 *.synctex.gz
 *.sty
+*.pdf
+*.fdb_latexmk
+*.DS_Store
